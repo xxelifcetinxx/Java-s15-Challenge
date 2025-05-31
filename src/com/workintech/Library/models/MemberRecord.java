@@ -3,6 +3,7 @@ package com.workintech.Library.models;
 import java.util.Date;
 
 public class MemberRecord {
+    private String studentFaculty;
     private Long memberId;
     private String type;
     private Date dateOfMembership;
