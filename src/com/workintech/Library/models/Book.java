@@ -21,7 +21,7 @@ public class Book {
         this.price = price;
     }
 
-    public Book(Long bookId, Author author, Person owner, String name, Double price, String status, String edition, Date dateOfPurchase, String category) {
+    public Book(Long bookId, Author author, Person owner, String name, Double price, String status, String edition, Date dateOfPurchase) {
         this.bookId = bookId;
         this.author = author;
         this.owner = owner;
