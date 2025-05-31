@@ -102,6 +102,7 @@ public class Book {
                 ", Price: " + price +
                 ", Status: " + status +
                 ", Edition: " + edition +
-                ", Purchased: " + dateOfPurchase;
+                ", Purchased: " + dateOfPurchase +
+                ", Category: " + category ;
     }
 }
