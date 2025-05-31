@@ -85,7 +85,7 @@ public class Book {
         return bookId;
     }
 
-    public void changeOwner(Reader newOwner) {
+    public void changeOwner(Person newOwner) {
         this.owner = newOwner;
         updateStatus("Loaned ");
     }

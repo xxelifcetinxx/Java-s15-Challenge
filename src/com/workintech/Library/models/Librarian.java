@@ -26,12 +26,12 @@ public class Librarian extends Person {
         return null;
     }
 
-    // Okuyucu dogrulama
+    // Üye doğrulama
     public boolean verifyMember(Set<Reader> readers, Reader reader) {
         return readers.contains(reader);
     }
 
-    // Okuyucuya kitap verme
+    // Kitap verme
     public void issueBook(Book book, Reader reader) {
         if (book.getOwner() == null) {
             book.changeOwner(reader);
@@ -42,13 +42,13 @@ public class Librarian extends Person {
         }
     }
 
-    // teslim tarihi gecikme cezası
+    // Gecikme cezası
     public double calculateFine(int delayedDays) {
         double delayRate = 2;
         return delayedDays * delayRate;
     }
 
-    // fatura oluşturma
+    // Fatura oluşturma
     public void createBill(Reader reader, double amount) {
         System.out.println("Reader: " + reader.getName() + ", Fine amount: " + amount);
     }

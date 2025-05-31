@@ -1,4 +1,3 @@
-
 package com.workintech.Library.models;
 
 
@@ -29,7 +28,7 @@ public class Library {
         System.out.println("Book: " + book.getTitle());
     }
 
-    // 2. Kitap ID ye göre kitap bulma
+    // 2. Kitap ID'sine göre kitap bulma
     public Book findBookById(Long bookId) {
         for (Book book : books) {
             if (book.getBookId().equals(bookId)) {
@@ -89,7 +88,7 @@ public class Library {
         books.add(book);
     }
 
-    //Kitabı okuyucuya verme
+    //Kitap verme:
     public void lendBook(Book book, Reader reader){
         if(books.contains(book)){
             book.changeOwner(reader);
